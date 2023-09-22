@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap');
+/*font-family: 'Raleway', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+:root{
+    --color-blanco: #ffffff;
+    --color-azul-claro: #2196f3;
+    --color-gris-oscuro:  #212121;
+    --color-beige: #757575;
+    --color-azul-oscuro: #2F303A;
+    --Color-azul-proundo: #1b2484;
+}
+*body{
+    font-family: 'Roboto', sans-serif; 
+    color: black;
+}
+/*Style encabezado general*/
+.header{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500; 
+    font-size: 14px; 
+    line-height: 1.14; 
+    letter-spacing: 0.02em;
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-blanco);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom:  1px solid #ECECEC;
+}
+.container{
+    width: 1200px; 
+    margin: auto; 
+}
+.container-header{
+    justify-content: space-between; 
+    display: flex; 
+    align-items:center;
+}
+.container-header ul{
+    display: flex; 
+    align-items:center;
+    padding-left: 0px;
+}
+.navigator{
+    display: flex; 
+    align-items:center;
+}
+.navigator ul{
+    padding-left: 0px;
+}
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: right; 
+    color: var(--color-azul-claro); 
+}
+.logo-header{
+    margin-right: 93px;
+}
+.list{
+    display: flex;
+    list-style: none; 
+    gap: 50px;
+    margin-left: 0;
+    padding: 0px;
+}
+.current-link{
+    color:var(--color-azul-claro); 
+}
+.header-link{ 
+    color: var(--color-gris-oscuro); 
+}
+.header-link:hover, .header-link:focus{
+    color: var(--color-azul-claro); 
+}
+
+.header-link-contact{
+    color: var(--color-beige); 
+}
+.header-link-contact:hover, .header-link-contact:focus{
+    color: var(--color-azul-claro); 
+}
+/*Style cuerpo pagina Principal*/
+.introduction{
+    height: 600px;
+    width: 1600px;
+    background-color:var(--color-azul-oscuro);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.title{ 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color:var(--color-blanco);
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    width: 696px;
+    height: 120px;
+}
+.index-button{
+    background-color:var(--color-azul-claro);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-blanco);
+    cursor: pointer;
+    width: 261px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+}
+.index-button:hover, .index-button:focus{
+    background-color: var(--Color-azul-proundo);
+}
+/*caracteristicas*/
+.section{
+    margin-top: 94px;
+}
+.characteristics{
+    width: 1600px;
+    display:flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 0;
+}
+.characteristics ul{
+    gap: 30px;
+    margin: 0px;
+}
+.characteristics-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--color-gris-oscuro);
+}
+.characteristics-description{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background-color: var(--color-blanco);
+    color: var(--color-beige);
+    width: 270px;
+}
+/*A que nos dedicamos*/
+.works{
+    width: 1600px;
+    display:flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 94px;
+}
+.works ul{
+    gap: 30px;
+}
+.works h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--color-gris-oscuro);
+}
+/*Nuestro Equipo*/
+.team{
+    background-color: #F5F4FA;
+    width: 1600px;
+    height: 648px;
+    display:flex;
+    align-items: center;
+    margin: auto;
+}
+.team ul{
+    gap: 37px;
+}
+.team h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--color-gris-oscuro);
+    margin: 0px;
+    margin-bottom: 50px;
+}
+.team h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--color-gris-oscuro);
+}
+.team p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--color-beige);
+}    
+
+/*Style de footer*/
+.footer{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400; 
+    font-size: 14px; 
+    line-height: 1.71; 
+    letter-spacing: 0.03em; 
+    color: var(--color-blanco);
+    background-color: var(--color-azul-oscuro);
+    width: 1600px;
+    height: 252px;
+    display:flex;
+    align-items: center;
+    margin: auto;
+}
+.container-footer{
+    margin-left: 215px;
+    margin-top: 60px;
+}
+.list-footer{
+ list-style: none;
+ padding: 0px;
+}
+.footer-link{
+    color: var(--color-blanco);
+}
+.footer-link:hover, .footer-link:focus{
+    color: var(--color-azul-claro);
+}
+.footer-link-contact{
+    color:#FFFFFF99;
+}
+.footer-link-contact:hover, .footer-link-contact:focus{
+    color: var(--color-azul-claro);
+}
+
+
+/*Style cuerpo pagina portafolio*/
+.project-types ul{
+    width: 620px;
+    height: 54px;
+    display:flex;
+    align-items: center;
+    margin: auto;
+    gap: 8px;
+}
+.project-button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--color-gris-oscuro);
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    border-style: none;
+    padding: 6px 24px;
+}
+.project-button:hover, .project-button:focus{
+    background-color: var(--color-azul-claro);
+    color: var(--color-blanco);
+}
+.card li{
+    width: 370px;
+    border: 1px solid #EEEEEE;
+}
+.card ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 34px;
+    margin-bottom: 82px;
+    justify-content: center;
+}   
+.project-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--color-gris-oscuro);
+}
+.project-clasification{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--color-beige);
+}
+
