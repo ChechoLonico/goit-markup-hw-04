@@ -76,7 +76,18 @@
 .header-link:hover, .header-link:focus{
     color: var(--color-azul-claro); 
 }
-
+.contact-header-item{
+    display: flex;
+    align-items: center;
+}
+.header-icon{
+    margin-right: 10px;
+    color: var(--color-gris-oscuro);
+}
+.header-icon:hover, .header-icon:focus{
+    color: var(--color-azul-claro)
+    /*No puedo hacer que cambien de color el icono*/
+}
 .header-link-contact{
     color: var(--color-beige); 
 }
@@ -126,9 +137,6 @@
     background-color: var(--Color-azul-proundo);
 }
 /*caracteristicas*/
-.section{
-    margin-top: 94px;
-}
 .characteristics{
     width: 1600px;
     display:flex;
@@ -140,6 +148,20 @@
     gap: 30px;
     margin: 0px;
 }
+.section{
+    margin-top: 94px;
+}
+.characteristics-icon-space{
+    background-color: #F5F4FA;
+    height: 120px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.characteristics-icon{
+    height: 70px;
+    width: 70px;
+}
 .characteristics-title{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -147,6 +169,8 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--color-gris-oscuro);
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .characteristics-description{
     font-family: 'Roboto', sans-serif;
@@ -157,6 +181,7 @@
     background-color: var(--color-blanco);
     color: var(--color-beige);
     width: 270px;
+    margin: 0px;
 }
 /*A que nos dedicamos*/
 .works{
@@ -190,6 +215,10 @@
 .team ul{
     gap: 37px;
 }
+.team li{
+    background-color: var(--color-blanco);
+    box-shadow: 0px 2px 1px 0px #00000033;
+}
 .team h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -219,6 +248,49 @@
     text-align: center;
     color: var(--color-beige);
 }    
+.team-social-media{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0px;
+    justify-content: center;
+}
+
+/*Clientes*/
+.regular-customer{
+    width: 1600px;
+    display:flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 0;
+}
+.regular-customer h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--color-gris-oscuro);
+    margin: 0px;
+}
+.regular-customer ul{
+    height: 162px;
+    width: 1170px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.customer-item{
+    width: 170px;
+    height: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
 
 /*Style de footer*/
 .footer{
@@ -238,10 +310,11 @@
 .container-footer{
     margin-left: 215px;
     margin-top: 60px;
+    height: 161px;
 }
 .list-footer{
- list-style: none;
- padding: 0px;
+    list-style: none;
+    padding: 0px;
 }
 .footer-link{
     color: var(--color-blanco);
@@ -255,6 +328,16 @@
 .footer-link-contact:hover, .footer-link-contact:focus{
     color: var(--color-azul-claro);
 }
+.container-footer h2{
+    margin: 0px;
+
+}
+.social-media-footer{
+    margin: 0;
+
+}
+
+
 
 
 /*Style cuerpo pagina portafolio*/
@@ -311,4 +394,3 @@
     letter-spacing: 0.03em;
     color: var(--color-beige);
 }
-
