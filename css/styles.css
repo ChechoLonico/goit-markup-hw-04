@@ -79,21 +79,25 @@
 .contact-header-item{
     display: flex;
     align-items: center;
+    gap: 10px;
+    fill: var(--color-beige);
 }
-.header-icon{
-    margin-right: 10px;
-    color: var(--color-gris-oscuro);
+.contact-header-item:hover, .contact-header-item:focus {
+    color: var(--color-azul-claro);
 }
-.header-icon:hover, .header-icon:focus{
-    color: var(--color-azul-claro)
-    /*No puedo hacer que cambien de color el icono*/
+.icon{
+    fill:  var(--color-beige);
+}
+.icon:hover{
+    fill: var(--color-azul-claro);
 }
 .header-link-contact{
-    color: var(--color-beige); 
+    color: var(--color-beige);
 }
 .header-link-contact:hover, .header-link-contact:focus{
-    color: var(--color-azul-claro); 
+    color: var(--color-azul-claro);
 }
+
 /*Style cuerpo pagina Principal*/
 .introduction{
     height: 600px;
@@ -103,6 +107,8 @@
     display: flex;
     align-items: center;
     margin: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgb(47, 48, 58, 0.40)),  url(../images/Hero-1.jpg);
+    
 }
 .title{ 
     font-family: 'Roboto', sans-serif;
@@ -282,6 +288,9 @@
     align-items: center;
     margin: 0px;
 }
+.regular-customer ul:hover{
+    fill: var(--color-azul-claro);
+}
 .customer-item{
     width: 170px;
     height: 81px;
@@ -290,6 +299,13 @@
     justify-content: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+}
+.customer-item:hover{
+    color: var(--color-azul-claro);
+    fill: var(--color-azul-claro);
+}
+.customer-list:hover, .customer-list:focus{
+    fill: var(--color-azul-claro);
 }
 
 /*Style de footer*/
@@ -311,6 +327,22 @@
     margin-left: 215px;
     margin-top: 60px;
     height: 161px;
+    display: flex;
+    flex-wrap: wrap;
+    font-style: normal;
+}
+.footer-adress{
+    width: 231px;
+    height: 95px;
+}
+.logo-footer{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: right;
+    color: var(--color-azul-claro); 
 }
 .list-footer{
     list-style: none;
@@ -328,13 +360,30 @@
 .footer-link-contact:hover, .footer-link-contact:focus{
     color: var(--color-azul-claro);
 }
-.container-footer h2{
-    margin: 0px;
-
+.social-media-footer{
+    width: 206px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    
+}
+.title-social-media{
+    width: 135px;
+    height: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0.85;
+    letter-spacing: 0.03em;
+    margin-right: 71px;
+    margin-bottom: 0px;
 }
 .social-media-footer{
-    margin: 0;
-
+    list-style: none;
+    padding: 0;
+    gap: 34px;
+    padding-inline-start: 0;
 }
 
 
@@ -360,16 +409,25 @@
     background-color: #F5F4FA;
     border-radius: 4px;
     border-style: none;
-    padding: 6px 24px;
+    padding: 6px 24px;   
 }
+
+
 .project-button:hover, .project-button:focus{
     background-color: var(--color-azul-claro);
     color: var(--color-blanco);
+    box-shadow: 0px 3px 3px 0px #0000001F;
 }
 .card li{
     width: 370px;
     border: 1px solid #EEEEEE;
 }
+.card li:hover{
+    box-shadow: 1px 4px 6px 0px #00000029;
+}
+
+
+
 .card ul{
     display: flex;
     flex-wrap: wrap;
